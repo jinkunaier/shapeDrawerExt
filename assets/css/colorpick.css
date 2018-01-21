@@ -1,0 +1,138 @@
+html,
+body {
+  margin: 0;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.shape-drawer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: calc(100vh - 80px);
+}
+.shape-drawer-container > * {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  margin: 10px;
+  outline: 1px solid #c3c3c3;
+}
+.shape-drawer-container > #terminal {
+  padding: 10px;
+}
+.x-colorpicker-button {
+  position: relative;
+  border: 1px solid gray;
+  background-image: url('images/colorpick/checkerboard.png');
+}
+/* The actual pop window with the color picker components */
+.x-colorpicker {
+  overflow: visible;
+}
+.x-colorpicker > .x-box-inner {
+  overflow: visible;
+}
+.x-colorpicker .x-form-item-label {
+  text-align: center;
+}
+.x-colopicker-escape-overflow {
+  overflow: visible;
+}
+.x-colopicker-escape-overflow > .x-box-inner {
+  overflow: visible;
+}
+.x-colorpicker-colormap {
+  background-image: url('images/colorpick/map_gradient.png');
+}
+.x-colorpicker-colormap-draghandle-container {
+  overflow: visible;
+  z-index: 1;
+}
+.x-colorpicker-colormap-blender {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.x-colorpicker-colormap-draghandle {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  left: -7px;
+  top: -7px;
+  background-image: url('images/colorpick/drag_circle.png');
+}
+.x-colorpicker-draghandle-container {
+  width: 20px;
+}
+.x-colorpicker-draghandle-container .x-autocontainer-outerCt {
+  height: 100%;
+}
+.x-colorpicker-draghandle {
+  width: 32px;
+  height: 9px;
+  position: relative;
+  left: -6px;
+  top: -4px;
+  background-image: url('images/colorpick/pickerslider.png');
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.x-colorpicker-hue {
+  background-image: url('images/colorpick/huegradient.png');
+}
+.x-colorpicker-hue-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.x-colorpicker-saturation .x-colorpicker-draghandle-container {
+  background: -moz-linear-gradient(top, #fff 0%, #000 100%);
+  /* FF3.6+ */
+  background: -webkit-linear-gradient(top, #fff 0%, #000 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fff 0%, #000 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #fff 0%, #000 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #fff 0%, #000 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr='#ffffff',
+      endColorstr='#000000',
+      GradientType=0
+    );
+  /* IE6-9 */
+}
+.x-colorpicker-value .x-colorpicker-draghandle-container {
+  background: -moz-linear-gradient(top, #f00 0%, #000 100%);
+  /* FF3.6+ */
+  background: -webkit-linear-gradient(top, #f00 0%, #000 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #f00 0%, #000 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #f00 0%, #000 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #f00 0%, #000 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr='#ff0000',
+      endColorstr='#000000',
+      GradientType=0
+    );
+  /* IE6-9 */
+}
+.x-colorpicker-alpha .x-colorpicker-draghandle-container {
+  background-image: url('images/colorpick/checkerboard.png');
+}
+.x-colorpicker-preview {
+  background-image: url('images/colorpick/checkerboard.png');
+}
